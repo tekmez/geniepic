@@ -1,24 +1,24 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { ShieldCheck, Zap, Bot } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { motion } from "framer-motion";
+import { ShieldCheck, Zap, Bot } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const features = [
   {
     icon: ShieldCheck,
-    title: 'Unmatched quality',
-    description: 'Get more natural and high-resolution results.',
+    title: "Unmatched quality",
+    description: "Get more natural and high-resolution results.",
   },
   {
     icon: Zap,
-    title: 'Fast and intuitive',
-    description: 'Transform your photos professionally with just one tap.',
+    title: "Fast and intuitive",
+    description: "Transform your photos professionally with just one tap.",
   },
   {
     icon: Bot,
-    title: 'Advanced AI technology',
-    description: 'Achieve flawless edits without losing details',
+    title: "Advanced AI technology",
+    description: "Achieve flawless edits without losing details",
   },
 ];
 

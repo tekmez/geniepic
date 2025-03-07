@@ -744,9 +744,6 @@ video {
 .z-20 {
   z-index: 20;
 }
-.z-30 {
-  z-index: 30;
-}
 .z-50 {
   z-index: 50;
 }
@@ -1498,6 +1495,9 @@ video {
 .p-1 {
   padding: 0.25rem;
 }
+.p-2 {
+  padding: 0.5rem;
+}
 .p-3 {
   padding: 0.75rem;
 }
@@ -1718,9 +1718,6 @@ video {
 }
 .text-transparent {
   color: transparent;
-}
-.text-white\/90 {
-  color: rgb(255 255 255 / 0.9);
 }
 .underline-offset-4 {
   text-underline-offset: 4px;
