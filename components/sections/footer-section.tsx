@@ -6,13 +6,17 @@ export function FooterSection() {
           © {new Date().getFullYear()} GeniePic. All rights reserved.
         </p>
         <div className="flex gap-6">
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+          <a
+            href="https://sites.google.com/view/geniepic-privacy/ana-sayfa"
+            target="_blank"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
             Privacy
           </a>
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-            Terms
-          </a>
-          <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+          <a
+            href="mailto:developertuncay@gmail.com"
+            className="text-muted-foreground hover:text-primary transition-colors"
+          >
             Contact
           </a>
         </div>
