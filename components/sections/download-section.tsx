@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { AppleIcon, PlayIcon } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { AppleIcon, PlayIcon } from "lucide-react";
 
 export function DownloadSection() {
   return (
@@ -19,18 +19,26 @@ export function DownloadSection() {
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-8">
             Download our app now and experience the difference.
-            Available on iOS and Android.
+            {/* <br />
+            Available on iOS and Android. */}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-primary hover:bg-primary/90 gap-2">
               <AppleIcon className="w-5 h-5" />
               App Store
             </Button>
-            <Button size="lg" variant="outline" className="border-secondary text-secondary hover:bg-secondary/10 gap-2">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-secondary text-secondary hover:bg-secondary/10 gap-2"
+            >
               <PlayIcon className="w-5 h-5" />
               Google Play
             </Button>
           </div>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Coming soon to Android and iOS.
+          </p>
         </motion.div>
       </div>
     </section>

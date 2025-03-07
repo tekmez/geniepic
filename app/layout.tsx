@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "GeniePic",
   description:
     "GeniePic is a mobile app that allows you to edit your photos with AI.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
