@@ -23,22 +23,31 @@ export function DownloadSection() {
             Available on iOS and Android. */}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 gap-2">
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90 gap-2"
+              onClick={() => {
+                window.open(
+                  "https://apps.apple.com/tr/app/geniepic/id6741926921?l=tr",
+                  "_blank"
+                );
+              }}
+            >
               <AppleIcon className="w-5 h-5" />
               App Store
             </Button>
-            <Button
+            {/* <Button
               size="lg"
               variant="outline"
               className="border-secondary text-secondary hover:bg-secondary/10 gap-2"
             >
               <PlayIcon className="w-5 h-5" />
               Google Play
-            </Button>
+            </Button> */}
           </div>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          {/* <p className="text-muted-foreground max-w-2xl mx-auto">
             Coming soon to Android and iOS.
-          </p>
+          </p> */}
         </motion.div>
       </div>
     </section>

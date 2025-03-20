@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { Button } from '@/components/ui/button';
-import { motion } from 'framer-motion';
-import { ArrowDown } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { ArrowDown } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -22,7 +22,7 @@ export function HeroSection() {
         className="text-center relative z-10"
       >
         <div className="inline-block mb-6">
-          <motion.span 
+          <motion.span
             className="text-primary text-lg font-semibold px-4 py-1.5 rounded-full border border-primary/20 bg-primary/5"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -31,7 +31,7 @@ export function HeroSection() {
             Introducing
           </motion.span>
         </div>
-        <motion.h1 
+        <motion.h1
           className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-primary via-secondary to-primary relative"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -39,31 +39,44 @@ export function HeroSection() {
         >
           GeniePic
         </motion.h1>
-        <motion.p 
+        <motion.p
           className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
         >
-          With superior quality compared to competitors, effortlessly remove unwanted objects, restore old photos, and retouch portraits with precision.
+          With superior quality compared to competitors, effortlessly remove
+          unwanted objects, restore old photos, and retouch portraits with
+          precision.
         </motion.p>
-        <motion.div 
+        <motion.div
           className="flex gap-4 justify-center"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8 }}
         >
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-primary hover:bg-primary/90 relative group overflow-hidden"
+            onClick={() => {
+              window.open(
+                "https://apps.apple.com/tr/app/geniepic/id6741926921?l=tr",
+                "_blank"
+              );
+            }}
           >
             <span className="relative z-10">Download Now</span>
             <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-primary opacity-0 group-hover:opacity-100 transition-opacity" />
           </Button>
-          <Button 
-            size="lg" 
-            variant="outline" 
+          <Button
+            size="lg"
+            variant="outline"
             className="border-primary text-primary hover:bg-primary/10 relative group"
+            onClick={() => {
+              document
+                .querySelector("#key-features")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
           >
             <span className="relative z-10">Learn More</span>
             <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
