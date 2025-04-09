@@ -1,21 +1,20 @@
-import { HeroSection } from '@/components/sections/hero-section';
-import { KeyFeaturesSection } from '@/components/sections/key-features-section';
-import { FeaturesSection } from '@/components/sections/features-section';
-import { DownloadSection } from '@/components/sections/download-section';
-import { FooterSection } from '@/components/sections/footer-section';
-import { ThemeToggle } from '@/components/theme-toggle';
+import HeroGeometric from "@/components/home/hero-geometric";
+import FeaturesSection from "@/components/home/features-section";
+import CTASection from "@/components/home/cta-section";
+import ParallaxSection from "@/components/home/parallax-section";
 
 export default function Home() {
   return (
     <main>
-      <div className="fixed top-4 right-4 z-50">
-        <ThemeToggle />
-      </div>
-      <HeroSection />
-      <KeyFeaturesSection />
-      <FeaturesSection />
-      <DownloadSection />
-      <FooterSection />
+      <HeroGeometric />
+
+      <ParallaxSection speed={0.1} direction="up">
+        <FeaturesSection />
+      </ParallaxSection>
+
+      <ParallaxSection speed={0.1} direction="down">
+        <CTASection />
+      </ParallaxSection>
     </main>
   );
 }
